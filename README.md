@@ -2,7 +2,6 @@
 ## Smart Integrated Chess Information Logging in Algebraic Notation
 
 Title 1
-========================
 Title 2 
 ------------------------
 
