@@ -1,4 +1,4 @@
- # ♟️ SICILIAN: <br> &nbsp; &nbsp; &nbsp; Smart Integrated Chess Information Logging in Algebraic Notation
+ # ♟️SICILIAN: <br> &nbsp; &nbsp; Smart Integrated Chess Information Logging in Algebraic Notation
 
 SICILIAN is a mobile application that can automatically record chess games in algebraic notation, translate them into an electronic form, act as a traditional chess clock, and provide a display mechanism similar to a scoresheet.
 
