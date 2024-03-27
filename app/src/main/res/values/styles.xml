@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- Theme.AppCompat.Light.NoActionBar -->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:windowBackground">@color/colorBackground</item>-->
+<!--        <item name="colorPrimary"></item>-->
+
+<!--    </style>-->
+
+    <style name="SeekBar">
+        <item name="android:background">@null</item>
+        <item name="android:shape">oval</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:progressDrawable">@drawable/progress_background</item>
+        <item name="android:thumbOffset">10dp</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+    </style>
+
+<!--    <item name="android:progressTint">#00BCD4</item>-->
+<!--    <item name="android:progressBackgroundTint">#B2EBF2</item>-->
+<!--    <item name="android:thumbTint">#0097A7</item>-->
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="ButtonBorder">
+        <item name="android:color">#2ebadc</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="colorControlHighlight">#00FFFF</item>
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/blue</item>
+        <item name="itemBackground">@color/gray</item>
+
+    </style>
+
+</resources>

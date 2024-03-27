@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Choose a piece to promote into:" />
+
+        <Button
+            android:id="@+id/queen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Queen" />
+
+        <Button
+            android:id="@+id/rook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Rook" />
+
+        <Button
+            android:id="@+id/bishop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bishop" />
+
+        <Button
+            android:id="@+id/knight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Knight" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

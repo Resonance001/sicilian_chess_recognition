@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ChessCamera"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:id="@+id/bac_dim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0000000"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:titleTextColor="@color/colorOnPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_canny_or_lightP"
+                app:backgroundTint="@color/border"
+                android:background="@drawable/border_full"
+                android:text="@string/Canny"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+
+        <org.opencv.android.JavaCameraView
+            android:id="@+id/javacamera"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:cropToPadding="true"
+            opencv:camera_id="any"
+
+            opencv:show_fps="true" />
+
+<!--        <View style="@style/Divider" />-->
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="2dp"
+                    android:background="#2ebadc" />
+
+                <Button
+                    android:id="@+id/button_1"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Canny"
+                    android:textColor="@color/black"
+
+                    android:textSize="12sp"
+                    app:strokeColor="#2ebadc" />
+
+                <Button
+                    android:id="@+id/button_2"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Saturation"
+                    android:textColor="@color/black"
+
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:strokeColor="#2ebadc" />
+
+
+                <Button
+                    android:id="@+id/button_3"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Value"
+                    android:textColor="@color/black"
+
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:strokeColor="#2ebadc" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="#2ebadc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+
+                android:paddingStart="10dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/text_lower_threshold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:text="Threshold: "
+                        android:textColor="@color/black"/>
+
+                    <SeekBar
+                        android:id="@+id/bar_lower_threshold"
+                        style="@style/SeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/text_upper_threshold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:text="Threshold: "
+                        android:textColor="@color/black"/>
+
+                    <SeekBar
+                        android:id="@+id/bar_upper_threshold"
+                        style="@style/SeekBar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/additional_threshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/threshold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_full"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/text_ratio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="Threshold: "
+                    android:textColor="@color/black"/>
+
+                <SeekBar
+                    android:id="@+id/bar_ratio"
+                    style="@style/SeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="6" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:text="Test: " />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_drawer_header"
+        app:menu="@menu/nav_drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

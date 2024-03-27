@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:gravity="center_horizontal"
+    android:background="#f5f5f5"
+    android:baselineAligned="false" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_text"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/text_button_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@drawable/border_text"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_name"
+            android:textAlignment="gravity" >
+            <requestFocus/>
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/border_text"
+        android:layout_weight="5"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.webianks.library.scroll_choice.ScrollChoice
+                android:id="@+id/scroll_choice_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                app:scroll_atmospheric="true"
+                app:scroll_background_color="@color/white"
+                app:scroll_indicator="true"
+                app:scroll_indicator_color="@color/black"
+                app:scroll_item_align="center"
+                app:scroll_item_text_color="@color/gray"
+                app:scroll_selected_item_text_color="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_hour"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.webianks.library.scroll_choice.ScrollChoice
+                android:id="@+id/scroll_choice_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:scroll_atmospheric="true"
+                app:scroll_background_color="@color/white"
+                app:scroll_indicator="true"
+                app:scroll_indicator_color="@color/black"
+                app:scroll_item_align="center"
+                app:scroll_item_text_color="@color/gray"
+                app:scroll_selected_item_text_color="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_minute"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.webianks.library.scroll_choice.ScrollChoice
+                android:id="@+id/scroll_choice_seconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                app:scroll_atmospheric="true"
+                app:scroll_background_color="@color/white"
+                app:scroll_indicator="true"
+                app:scroll_indicator_color="@color/black"
+                app:scroll_item_align="center"
+                app:scroll_item_text_color="@color/gray"
+                app:scroll_selected_item_text_color="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_second"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_text"
+        android:weightSum = "9" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+            android:shadowColor="#00FFFFFF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/increment"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/text_increment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@drawable/border_text"
+            android:textColor="@color/black"
+            android:inputType="numberSigned"
+            android:hint="@string/hint_increment"
+            android:visibility="invisible"
+            android:textAlignment="gravity" >
+            <requestFocus/>
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_text"
+        android:layout_weight="3"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/text_view_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/hour" />
+
+        <TextView
+            android:id="@+id/text_view_minutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/minutes" />
+
+        <TextView
+            android:id="@+id/text_view_seconds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/seconds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_confirm"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_text"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/button_back"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_text"
+            android:text="@string/back" />
+
+    </LinearLayout>
+
+</LinearLayout>

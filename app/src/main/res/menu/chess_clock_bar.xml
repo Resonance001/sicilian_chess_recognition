@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/start"
+        android:icon="@drawable/ic_play_circle_filled_black_24dp"
+        app:showAsAction="always|withText"
+        android:title="Start"/>
+
+    <item android:id="@+id/resign"
+        android:icon="@drawable/ic_baseline_flag_24"
+        app:showAsAction="always|withText"
+        android:title="Resign"/>
+
+    <item android:id="@+id/draw"
+        android:icon="@drawable/ic_baseline_import_export_24"
+        app:showAsAction="always|withText"
+        android:title="Draw"/>
+
+    <item android:id="@+id/save"
+        android:icon="@drawable/ic_save_black_24dp"
+        app:showAsAction="always|withText"
+        android:title="Save"/>
+
+</menu>

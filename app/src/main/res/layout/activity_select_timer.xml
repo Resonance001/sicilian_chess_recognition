@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:baselineAligned="false" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_weight="7"
+
+        tools:context=".SetUpTimer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:background="@drawable/border_text" >
+
+            <Button
+                android:id="@+id/button_classical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="9"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/time_control1"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_edit1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/dots"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:background="@drawable/border_text" >
+
+            <Button
+                android:id="@+id/button_rapid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/time_control2"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_edit2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/dots"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:background="@drawable/border_text" >
+
+            <Button
+                android:id="@+id/button_blitz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/time_control3"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_edit3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/dots"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:background="@drawable/border_text" >
+
+            <Button
+                android:id="@+id/button_custom_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/time_control4"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_edit4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/dots"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:background="@drawable/border_text" >
+
+            <Button
+                android:id="@+id/button_custom_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/time_control5"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_edit5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/dots"
+                android:textAlignment="gravity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum = "2"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/border_text"
+                android:text="@string/start" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_text"
+                android:text="@string/back" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

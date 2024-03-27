@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">SICILIAN</string>
+
+    <string-array name="views">
+        <item>Original Mat</item>
+        <item>Gray</item>
+        <item>Canny</item>
+        <item>Contours</item>
+        <item>HSV</item>
+    </string-array>
+
+    <string name="Original">Original Mat</string>
+    <string name="Gray">Gray</string>
+    <string name="Canny">Canny</string>
+    <string name="Blur">Blur</string>
+    <string name="Contours">Contours</string>
+    <string name="HSV">HSV</string>
+
+    <string name="Light">Light Piece</string>
+    <string name="Dark">Dark Piece</string>
+
+    <string name="Hue">Hue</string>
+    <string name="Saturation">Saturation</string>
+    <string name="Value">Value</string>
+
+    <string name="lower_thresh">Lower Thresh: %1$d</string>
+    <string name="upper_thresh">Upper Thresh: %1$d</string>
+
+    <string name="ratio_thresh">Ratio: %.3f</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="initial_time">10:00</string>
+
+    <string name="text">Chess Time Control</string>
+    <string name="time_control1">Classical\u0020</string>
+    <string name="time_control2">Rapid\u0020</string>
+    <string name="time_control3">Blitz\u0020</string>
+    <string name="time_control4">Custom</string>
+    <string name="time_control5">Custom</string>
+    <string name="start">Start</string>
+    <string name="back">Back</string>
+    <string name="edit_timer">Edit Timer</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="select_custom">Selected %1$s Time Control.</string>
+
+    <string name="customtimerheader">CUSTOM TIMER SETUP</string>
+    <string name="name">Name:</string>
+    <string name="hint_name">Enter timer name</string>
+    <string name="hour">\u0009Hour:\u0020</string>
+    <string name="minutes">\u0009Minutes:\u0020</string>
+    <string name="seconds">\u0009Seconds:\u0020</string>
+    <string name="increment">Increment:</string>
+    <string name="hint_increment">Enter increment in seconds: </string>
+    <string name="label_hour">Hour/s</string>
+    <string name="label_minute">Minute/s</string>
+    <string name="label_second">Second/s</string>
+    <string name="check">\u2713</string>
+
+    <string name="dots">&#8942;</string>
+
+    <string name="toolbarTitle">Android Bluetooth Example</string>
+    <string name="openbt">Open Bluetooth</string>
+    <string name="makeVisible">Make Bluetooth Visible</string>
+    <string name="findDevices">Find Devices</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_enabled">Bluetooth is enabled.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="bt_not_available">Bluetooth is not available.</string>
+    <string name="title_connecting">connecting…</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices…</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <!-- Permissions  -->
+    <string name="camera_perms_granted">Permission is granted. (Camera)</string>
+    <string name="camera_perms_denied">"Permission is denied. (Camera)"</string>
+    <string name="storage_perms_granted">Permission is granted. (Storage)</string>
+    <string name="storage_perms_denied">Permission is denied. (Storage)</string>
+
+    <string name="storage_inaccessible">Cannot write to external storage.</string>
+
+    <!-- Storage -->
+    <string name="saved">File saved</string>
+    <string name="success">Successfully written file.</string>
+
+    <string name="help_edge_title">===== Edge Detection =====</string>
+    <string name="help_edge">This view shows the output of canny edge detection.\n\nChoose the optimal threshold that will show enough edges. If the lighting is too bright, reduce lower threshold. If the lighting is too dark, reduce higher threshold. To check if the values are optimal, proceed to Coordinate Detection view.\n\nClick "Canny" to change into "Blur" which will show the output of blurring the image.\n\nDefault Lower Threshold: 210\nDefault Upper Threshold: 256</string>
+    <string name="help_edge_end">==========================</string>
+
+    <string name="help_line_title">===== Line Detection =====</string>
+    <string name="help_line">This view shows the output of line detection. \n\n Make sure that the whole chessboard fits the camera frame. This will be indicated by the largest green rectangle. </string>
+    <string name="help_line_end">==========================</string>
+
+    <string name="help_coordinate_title">===== Coordinate Detection =====</string>
+    <string name="help_coordinate">This view shows the output of coordinate detection.\n\nThe text display shows the number of coordinates detected. There must be a total of 81 coordinates detected.\n\nIf the condition is not met, calibrate thresholds in Edge Detection view.</string>
+    <string name="help_coordinate_end">================================</string>
+
+    <string name="help_process_title">===== Piece Color Detection =====</string>
+    <string name="help_process">This view shows the threshold image for light pieces or dark pieces. Click the button above to switch between Light Piece and Dark Piece.\n\nThere must be 16 light pieces and 16 dark pieces on the starting position of the chessboard. To check the count, proceed to Final view.\n\nChess pieces are detected if they appear as white in the frame.To calibrate, change the hue, saturation, value and ratio thresholds. \n\nFor Light Pieces:(Default)\n\tHue Threshold: 18 &#8211; 48\n\tSaturation Threshold: 28 &#8211; 255\n\tValue Threshold: 149 &#8211; 255 \n\t Ratio: 0.014 \n\nFor Dark Pieces:(Default)\n\tHue Threshold: 0 &#8211; 180\n\tSaturation Threshold: 1 &#8211; 70\n\tValue Threshold: 1 &#8211; 30 \n\t Ratio: 0.021</string>
+    <string name="help_process_end">=================================</string>
+
+    <string name="help_final_title">===== Final View =====</string>
+    <string name="help_final">You must be in this view for the entire duration of the game. \n\nThe text display below will show the number of light and dark pieces. It will also show the moves played in the game.</string>
+    <string name="help_final_end">======================</string>
+</resources>

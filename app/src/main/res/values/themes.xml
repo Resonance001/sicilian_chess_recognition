@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/colorBackground</item>
+<!--        <item name="colorSurface">@color/test1</item>-->
+<!--        <item name="colorOnSurface">@color/test2</item>-->
+        <!-- colorSurface - color of Nav drawer -->
+        <!-- colorOnSurface - color of Menu items in Nav drawer, and onclick button-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/border</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimary</item>-->
+<!--        <item name="colorAccent">@color/colorSecondary</item>-->
+<!--    </style>-->
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Camera Calibration">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/view_edge"
+                    android:title="Edge Detection" />
+
+                <item
+                    android:id="@+id/view_line"
+                    android:title="Line Detection" />
+
+                <item
+                    android:id="@+id/view_coordinate"
+                    android:title="Coordinate Detection" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Image Processing">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/view_process"
+                    android:title="Piece Color Detection" />
+
+                <item
+                    android:id="@+id/view_final"
+                    android:title="Final" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

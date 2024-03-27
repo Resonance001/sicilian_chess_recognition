@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:baselineAligned="false">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/bac_dim_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C0000000"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:scaleType="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_view_black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="10dp"
+                    android:text="@string/initial_time" />
+
+                <Button
+                    android:id="@+id/button_black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    android:text="@string/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="20dp"
+                android:layout_weight="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_view_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="10dp"
+                    android:text="@string/initial_time" />
+
+                <Button
+                    android:id="@+id/button_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

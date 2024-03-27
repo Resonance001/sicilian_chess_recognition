@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='SICILIAN'
+include ':java'
+include ':openCVLibrary3410'

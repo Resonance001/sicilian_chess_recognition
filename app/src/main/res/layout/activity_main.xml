@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="startActivity"
+        android:text="Chess Clock" />
+
+    <Button
+        android:id="@+id/cam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="startActivity"
+        android:text="Camera" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:onClick="connect"
+            android:text="@string/connect"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/discoverable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:onClick="ensureDiscoverable"
+            android:text="@string/discoverable"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+
+</LinearLayout>
