@@ -16,7 +16,7 @@ The application is written is Java and powered by OpenCV
 <p float="left">
   <img src="https://github.com/Resonance001/sicilian_chess_recognition/assets/60764656/bcdac7bf-b57a-44c8-bd3e-60fad7527702" width="200" />
   <img src="https://github.com/Resonance001/sicilian_chess_recognition/assets/60764656/921924ab-1dec-48de-b6a9-6db41512a78d" width="200" /> 
-  <img src="https://github.com/Resonance001/sicilian_chess_recognition/assets/60764656/2fac2bda-7507-436d-a533-b6e0722a0793" width"200" />
+  <img src="https://github.com/Resonance001/sicilian_chess_recognition/assets/60764656/2fac2bda-7507-436d-a533-b6e0722a0793" width="200" />
 </p>
 
 ### Chess Clock
