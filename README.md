@@ -27,7 +27,7 @@ The setup requires two mobile devices, where one acts as the camera while the ot
   <img src="https://github.com/Resonance001/sicilian_chess_recognition/assets/60764656/4fd6de2a-001b-4de7-98be-ed07867ab89a" width="250" />
 </p>
 
-# Improvements / Recommendation
+# Improvements
 
 - Making camera calibration adaptive eliminates the need for human intervention in setting up thresholds before commencing a game.
 - Allowing 3D orientation will make device positioning more flexible and practical.
